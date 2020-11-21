@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户主页</title>
+    <style>
+        table{
+            margin: 2em;
+        }
+        tr{
+            font-size: 0.8em;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <form action="/user/adduser" method="POST">
+        <table>
+            <tr>性别:&nbsp;<input name="sex" type="text" value="男"></tr>
+            <tr>身高:&nbsp;<input name="height" type="text" value="170cm"></tr>
+            <tr >体重:&nbsp;<input name="weight" type="text" value="65kg"></tr>
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
